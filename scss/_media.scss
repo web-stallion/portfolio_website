@@ -1,0 +1,399 @@
+// Tablet & Smaller Screens
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+
+  #about-c .about-logos img {
+    width: 80%;
+    margin: 0 1rem;
+  }
+
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-c div h1 {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+  }
+
+  #home-a .specials,
+  #home-c .process,
+  #about-d .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+  #main-nav {
+    flex-direction: column;
+    align-items: center !important;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // Stack Grid Columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #work-a .items {
+    grid-template-columns: 1fr;
+  }
+
+  // Home Page
+  #home {
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // About Page
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bio-img"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
+
+        img {
+          border: 3px solid $main-color;
+        }
+
+        .bio {
+          border: 3px solid $main-color;
+        }
+      }
+    }
+
+    &-c {
+      .about-logos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+
+        img {
+          width: 80%;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+
+  // Contact Page
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+
+    &-b {
+      .contact-info {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 1rem;
+
+        div {
+          padding: 3rem;
+          p {
+            padding: 1rem;
+            text-transform: none;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 0.7rem;
+  }
+
+  .lead {
+    font-size: 0.8rem;
+  }
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 0.5rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // Stack Grid Columns
+  #home-b .stats,
+  #work-a .items {
+    grid-template-columns: 1fr;
+  }
+
+  // Home Page
+  #home {
+    &-a {
+      .specials {
+        grid-template-columns: 1fr !important;
+      }
+    }
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+
+    &-c {
+      .process {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  }
+
+  // About Page
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bio-img"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
+
+        img {
+          border: 3px solid $main-color;
+        }
+
+        .bio {
+          border: 3px solid $main-color;
+        }
+      }
+    }
+
+    &-c {
+      .about-logos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+
+        img {
+          width: 80%;
+          margin: 0 1rem;
+        }
+      }
+    }
+
+    &-d {
+      .testimonials {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  }
+
+  // Contact Page
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+
+    &-b {
+      .contact-info {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 1rem;
+
+        div {
+          padding: 3rem;
+          p {
+            padding: 1rem;
+            text-transform: none;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
+
+// Landscapes
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding: 3rem;
+      h1 {
+        font-size: 2rem;
+        padding: 1rem 0;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .btn-light {
+        padding: 0.2rem 1rem;
+      }
+    }
+  }
+
+  #home {
+    &-a {
+      .specials {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &-c {
+      .process {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  #about {
+    &-c {
+      .about-logos {
+        img {
+          width: 80%;
+          margin: 0 1rem;
+        }
+      }
+    }
+    &-d {
+      .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  #contact {
+    &-b {
+      .contact-info {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 1rem;
+
+        div {
+          padding: 3rem;
+          p {
+            padding: 1rem;
+            text-transform: none;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 330px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
