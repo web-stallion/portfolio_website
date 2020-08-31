@@ -425,6 +425,10 @@ img {
     height: 100px; }
   #contact-a .text-fields .text-input {
     padding: 0.7rem 1rem; }
+  #contact-a .text-fields div {
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
 #contact-b .contact-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
