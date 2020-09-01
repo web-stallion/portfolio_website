@@ -473,6 +473,9 @@ img {
     #header-home .header-content {
       padding-top: 5rem; }
 
+  #home-a .specials {
+    grid-template-columns: repeat(2, 1fr); }
+
   #about-c .about-logos img {
     width: 80%;
     margin: 0 1rem; }
@@ -497,7 +500,7 @@ img {
 
   #main-nav {
     flex-direction: column;
-    align-items: center !important; }
+    align-items: center; }
     #main-nav li {
       padding: 1rem; }
 
@@ -590,13 +593,13 @@ img {
     grid-template-columns: 1fr; }
 
   #home-a .specials {
-    grid-template-columns: 1fr !important; }
+    grid-template-columns: 1fr; }
   #home-b .stats {
     grid-template-columns: 1fr; }
     #home-b .stats div {
       padding: 2rem 0 1rem 0; }
   #home-c .process {
-    grid-template-columns: 1fr !important; }
+    grid-template-columns: 1fr; }
 
   #about-a .about-info {
     grid-template-areas: "bio-img" "bio" "aw1" "aw2" "aw3"; }
@@ -611,7 +614,7 @@ img {
       width: 80%;
       margin: 0 1rem; }
   #about-d .testimonials {
-    grid-template-columns: 1fr !important; }
+    grid-template-columns: 1fr; }
 
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; }
